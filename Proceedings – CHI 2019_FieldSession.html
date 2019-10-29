@@ -379,7 +379,7 @@ CHI 2019 Orange: #ff6500
       color: #359f9e;
     }
 
-        .button {
+    .button {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -392,17 +392,18 @@ CHI 2019 Orange: #ff6500
   cursor: pointer;
 }
 
+.disabled,
+button[disabled]{
+  border: 2px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  pointer-events: none;
+}
 
     .button_conf {
   background-color: white; 
   color: black; 
   border: 2px solid #359f9e;
-    }
-
-    .button_filed {
-      background-color: white; 
-      color: black; 
-      border: 2px solid #ff6500;
     }
 
     /* END ACM OpenTOC */
@@ -925,12 +926,13 @@ CHI 2019 Orange: #ff6500
 
         <div id="post-107" class="post-107 page type-page status-publish hentry">
 
-          <h1 class="title-header">Proceedings by Research Field</h1>
+          <h1 class="title-header">Proceedings</h1>
           <!--chi redesign-->
           <div>
               Sort by
               <a href="./Proceedings – CHI 2019_ConSession.html" class="button button_conf">Conference Session</a>
-          </div>
+              <a href="./Proceedings – CHI 2019_FieldSession.html" class="button disabled">Field of Research</a>
+            </div>
           <div class="entry-content clearfix">
 
             <ul>

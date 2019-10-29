@@ -401,11 +401,13 @@ CHI 2019 Orange: #ff6500
 }
 
 
-    .button_conf {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #359f9e;
-    }
+.disabled,
+button[disabled]{
+  border: 2px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  pointer-events: none;
+}
 
     .button_filed {
       background-color: white; 
@@ -1021,10 +1023,11 @@ CHI 2019 Orange: #ff6500
 
         <div id="post-107" class="post-107 page type-page status-publish hentry">
 
-          <h1 class="title-header">Proceedings by Conference</h1>
+          <h1 class="title-header">Proceedings</h1>
            <!--chi redesign-->
            <div>
               Sort by
+              <a href="./Proceedings – CHI 2019_ConSession.html" class="button disabled">Conference Session</a>
               <a href="./Proceedings – CHI 2019_FieldSession.html" class="button button_filed">Field of Research</a>
             </div>
           <div class="entry-content clearfix">
